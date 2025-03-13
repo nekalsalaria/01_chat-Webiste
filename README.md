@@ -1,4 +1,4 @@
-## Chat Website
+## Chat Website 🚀
 
 ## Overview
 This project is built using the MERN stack — MongoDB, Express.js, React.js, and Node.js — along with additional technologies to enable real-time communication and secure authentication.
@@ -127,11 +127,6 @@ This project is built using the MERN stack — MongoDB, Express.js, React.js, an
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 📧 Contact
 
