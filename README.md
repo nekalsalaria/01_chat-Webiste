@@ -1,36 +1,57 @@
-## Chat Website 🚀
+# Chat Website
 
 ## Overview
-This project is built using the MERN stack — MongoDB, Express.js, React.js, and Node.js — along with additional technologies to enable real-time communication and secure authentication.
+Chat Website is a full-stack web application designed to enable real-time communication with secure user authentication. Built on the MERN stack (MongoDB, Express.js, React.js, Node.js), it offers a fast, responsive, and interactive experience.
 
 ---
 
 ## 🛠️ Used Technologies
 
-### 1. MongoDB
-- A NoSQL database used to store and manage data in flexible, JSON-like documents.
+### 1. Node.js
+- JavaScript runtime for running backend services and connecting the frontend to the server.
 
 ### 2. Express.js
-- A fast, unopinionated Node.js web application framework for building backend services and APIs.
+- A fast Node.js framework to handle backend operations and API routes.
 
 ### 3. React.js
-- A JavaScript library for building user interfaces.
-  - **UI Design:** Tailwind CSS is integrated for faster, modern, and responsive styling.
+- A JavaScript library for building a dynamic, interactive frontend UI.
+  - **UI Design:** Tailwind CSS is integrated for responsive, modern styling.
 
-### 4. Node.js
-- A JavaScript runtime that allows running JS code on the server-side, enabling a full-stack JavaScript architecture.
+### 4. MongoDB
+- A NoSQL database to store user data and chat messages.
+
+### 5. Socket.IO
+- Enables real-time, bidirectional event-based communication for live messaging.
+
+### 6. JWT (JSON Web Token)
+- Used for secure user authentication and authorization.
 
 ---
 
-## 🔧 Other Technologies
-
-### 1. Socket.IO
-- A JavaScript library that facilitates real-time, bidirectional communication between web clients (browsers) and servers.
-- Useful for implementing live features like chat, notifications, and more.
-
-### 2. JWT (JSON Web Token)
-- A secure and compact way to transmit information between parties as a JSON object.
-- Primarily used for user authentication and authorization.
+## 📁 Folder Structure
+```
+Chat-Website
+│
+├── Backend
+│   ├── node_modules
+│   ├── src
+│   ├── .env
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+│
+└── Frontend
+    ├── node_modules
+    ├── public
+    ├── src
+    ├── .gitignore
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    └── vite.config.js
+```
 
 ---
 
@@ -38,8 +59,8 @@ This project is built using the MERN stack — MongoDB, Express.js, React.js, an
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
-   cd <project-folder>
+   git clone https://github.com/nekalsalaria/chat-website
+   cd Chat-Website
    ```
 
 2. Install server-side dependencies:
@@ -73,47 +94,13 @@ This project is built using the MERN stack — MongoDB, Express.js, React.js, an
 
 ---
 
-## 📂 Folder Structure
-
-```bash
-.
-├── backend
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   └── server.js
-│
-└── frontend
-    ├── public
-    └── src
-        ├── components
-        ├── context
-        ├── hooks
-        ├── pages
-        └── App.js
-```
-
----
-
 ## 🎯 Features
 
-- **Full-stack CRUD Operations**
-- **User Authentication (Login/Register)** with JWT
-- **Real-time Communication** with Socket.IO
-- **Responsive UI Design** with Tailwind CSS
-- **RESTful APIs** for Backend
-- **Secure Backend** with Middleware & Error Handling
-
----
-
-## 🧠 Future Improvements
-
-- Role-based access control (RBAC)
-- File uploads
-- Optimized performance
-- Enhanced UI/UX
+- **Real-time Messaging** – Send and receive messages instantly.
+- **User Authentication** – Secure login and registration with JWT.
+- **Responsive UI** – Built with Tailwind CSS for a clean and modern design.
+- **RESTful APIs** – Seamless backend communication.
+- **Error Handling & Middleware** – Ensures backend security and stability.
 
 ---
 
@@ -126,7 +113,6 @@ This project is built using the MERN stack — MongoDB, Express.js, React.js, an
 5. Open a pull request
 
 ---
-
 
 ## 📧 Contact
 
