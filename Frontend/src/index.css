@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body {
+  overflow: hidden; /* Remove scrolling */
+}
+
