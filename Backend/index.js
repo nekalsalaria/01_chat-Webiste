@@ -13,13 +13,17 @@ dotenv.config();
 // middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
-
+app.use(
+  cors({
+    origin: "http://localhost:3001", // 👈 your frontend's origin
+    credentials: true,              // 👈 allow cookies and credentials
+  })
+);
 const PORT = process.env.PORT || 4001;
 const URI = process.env.MONGODB_URI;
 
 try {
-  mongoose.connect(URI);
+  mongoose.connect(process.env.MONGO_URI);
   console.log("Connected to MongoDB");
 } catch (error) {
   console.log(error);
@@ -28,6 +32,7 @@ try {
 //routes
 app.use("/api/user", userRoute);
 app.use("/api/message", messageRoute);
+console.log("Mongo URI:", process.env.MONGO_URI);
 
 server.listen(PORT, () => {
   console.log(`Server is Running on port ${PORT}`);
